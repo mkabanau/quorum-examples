@@ -32,16 +32,4 @@ cp build/bin/geth /usr/local/bin
 cp build/bin/bootnode /usr/local/bin
 popd >/dev/null
 
-# install Porosity
-wget -q https://github.com/jpmorganchase/quorum/releases/download/v1.2.0/porosity
-mv porosity /usr/local/bin && chmod 0755 /usr/local/bin/porosity
-
-# copy examples
-cp -r /vagrant/examples /home/vagrant/quorum-examples
-chown -R vagrant:vagrant /home/vagrant/quorum /home/vagrant/quorum-examples
-
-# done!
-banner "Quorum"
-echo
-echo 'The Quorum vagrant instance has been provisioned. Examples are available in ~/quorum-examples inside the instance.'
-echo "Use 'vagrant ssh' to open a terminal, 'vagrant suspend' to stop the instance, and 'vagrant destroy' to remove it."
+echo "done"
