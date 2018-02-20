@@ -2,7 +2,7 @@
 set -eu -o pipefail
 
 # install build deps
-add-apt-repository ppa:ethereum/ethereum
+add-apt-repository -y ppa:ethereum/ethereum
 apt-get update
 apt-get install -y build-essential unzip libdb-dev libleveldb-dev libsodium-dev zlib1g-dev libtinfo-dev solc sysvbanner wrk
 
