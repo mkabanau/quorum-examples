@@ -43,6 +43,6 @@ add-apt-repository \
    $(lsb_release -cs) \
    stable"
 apt-get update
-apt-get install -y docker-ce=17.09.1~ce
+apt-get install -y docker-ce
 
 echo "Done"
