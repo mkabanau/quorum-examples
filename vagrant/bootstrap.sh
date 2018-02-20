@@ -32,4 +32,12 @@ cp build/bin/geth /usr/local/bin
 cp build/bin/bootnode /usr/local/bin
 popd >/dev/null
 
+
+#install docker
+apt-get remove docker docker-engine docker.io
+apt-get update
+apt-get install apt-transport-https ca-certificates curl software-properties-common
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add -
+apt-get update
+
 echo "done"
